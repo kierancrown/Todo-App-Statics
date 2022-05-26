@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body class="p-12 bg-gray-500 text-white min-h-screen">
+    <div class="flex flex-col space-y-4">
+      <h1 class="text-3xl font-bold underline mb-2">List Item</h1>
+
+      <!-- Inbox Item -->
+      <div
+        class="w-80 p-1 rounded-lg shadow-lg bg-white flex flex-col text-gray-900"
+      >
+        <div class="flex items-center w-full">
+          <!-- Icon -->
+          <div class="p-1 m-1 flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="#54a0ff"
+              stroke="#54a0ff"
+              viewBox="0 0 512 512"
+            >
+              <defs>
+                <style>
+                  .fa-secondary {
+                    opacity: 0.4;
+                  }
+                </style>
+              </defs>
+              <path
+                class="fa-primary"
+                d="M447 56.25C443.5 42 430.7 32 416 32H96C81.31 32 68.53 42 64.97 56.25l-61.25 248.7C1.247 314.9 0 325.2 0 335.5V432C0 458.5 21.49 480 48 480h416c26.51 0 48-21.49 48-48v-96.47c0-10.32-1.247-20.6-3.715-30.61L447 56.25zM352 352H160L128 288H72.97L121 96h270l48.03 192H384L352 352z"
+              />
+              <path
+                class="fa-secondary"
+                d="M391 96h-270L72.97 288H128l32 64h192l32-64h55.03L391 96zM176 144h160C344.8 144 352 151.2 352 160c0 8.836-7.164 16-16 16h-160C167.2 176 160 168.8 160 160C160 151.2 167.2 144 176 144zM368 256h-224C135.2 256 128 248.8 128 240C128 231.2 135.2 224 144 224h224C376.8 224 384 231.2 384 240C384 248.8 376.8 256 368 256z"
+              />
+            </svg>
+          </div>
+          <!-- List title -->
+          <div class="flex flex-col ml-2">
+            <span class="font-bold text-gray-900">Inbox</span>
+          </div>
+          <!-- Item Count -->
+          <div
+            class="ml-auto p-1 m-1 flex items-center justify-center text-gray-400"
+          >
+            14
+          </div>
+        </div>
+      </div>
+      <!-- Today Item -->
+      <div
+        class="w-80 p-1 rounded-lg shadow-lg bg-white flex flex-col text-gray-900"
+      >
+        <div class="flex items-center w-full">
+          <!-- Icon -->
+          <div class="p-1 m-1 flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="#ee5253"
+              stroke="#ee5253"
+              viewBox="0 0 448 512"
+            >
+              <defs>
+                <style>
+                  .fa-secondary {
+                    opacity: 0.4;
+                  }
+                </style>
+              </defs>
+              <path
+                class="fa-primary"
+                d="M96 32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V192H0V112C0 85.49 21.49 64 48 64H96V32z"
+              />
+              <path
+                class="fa-secondary"
+                d="M448 464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192H448V464zM80 256C71.16 256 64 263.2 64 272V368C64 376.8 71.16 384 80 384H176C184.8 384 192 376.8 192 368V272C192 263.2 184.8 256 176 256H80z"
+              />
+            </svg>
+          </div>
+          <!-- List title -->
+          <div class="flex flex-col ml-2">
+            <span class="font-bold text-gray-900">Today</span>
+          </div>
+          <!-- Item Count -->
+          <div
+            class="ml-auto p-1 m-1 flex items-center justify-center text-gray-400"
+          ></div>
+        </div>
+      </div>
+      <!-- Upcomming Item -->
+      <div
+        class="w-80 p-1 rounded-lg shadow-lg bg-white flex flex-col text-gray-900"
+      >
+        <div class="flex items-center w-full">
+          <!-- Icon -->
+          <div class="p-1 m-1 flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="#F79F1F"
+              stroke="#F79F1F"
+              viewBox="0 0 448 512"
+            >
+              <defs>
+                <style>
+                  .fa-secondary {
+                    opacity: 0.4;
+                  }
+                </style>
+              </defs>
+              <path
+                class="fa-primary"
+                d="M96 32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V192H0V112C0 85.49 21.49 64 48 64H96V32zM96 296C96 282.7 106.7 272 120 272H328C341.3 272 352 282.7 352 296C352 309.3 341.3 320 328 320H120C106.7 320 96 309.3 96 296zM232 368C245.3 368 256 378.7 256 392C256 405.3 245.3 416 232 416H120C106.7 416 96 405.3 96 392C96 378.7 106.7 368 120 368H232z"
+              />
+              <path
+                class="fa-secondary"
+                d="M0 192H448V464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192zM120 320H328C341.3 320 352 309.3 352 296C352 282.7 341.3 272 328 272H120C106.7 272 96 282.7 96 296C96 309.3 106.7 320 120 320zM120 368C106.7 368 96 378.7 96 392C96 405.3 106.7 416 120 416H232C245.3 416 256 405.3 256 392C256 378.7 245.3 368 232 368H120z"
+              />
+            </svg>
+          </div>
+          <!-- List title -->
+          <div class="flex flex-col ml-2">
+            <span class="font-bold text-gray-900">Upcomming</span>
+          </div>
+          <!-- Item Count -->
+          <div
+            class="ml-auto p-1 m-1 flex items-center justify-center text-gray-400"
+          >
+            9
+          </div>
+        </div>
+      </div>
+      <!-- Starred Item -->
+      <div
+        class="w-80 p-1 rounded-lg shadow-lg bg-white flex flex-col text-gray-900"
+      >
+        <div class="flex items-center w-full">
+          <!-- Icon -->
+          <div class="p-1 m-1 flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="#fdcb6e"
+              stroke="#fdcb6e"
+              viewBox="0 0 576 512"
+            >
+              <path
+                d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"
+              />
+            </svg>
+          </div>
+          <!-- List title -->
+          <div class="flex flex-col ml-2">
+            <span class="font-bold text-gray-900">Starred</span>
+          </div>
+          <!-- Item Count -->
+          <div
+            class="ml-auto p-1 m-1 flex items-center justify-center text-gray-400"
+          ></div>
+        </div>
+      </div>
+      <!-- Completed Item -->
+      <div
+        class="w-80 p-1 rounded-lg shadow-lg bg-white flex flex-col text-gray-900"
+      >
+        <div class="flex items-center w-full">
+          <!-- Icon -->
+          <div class="p-1 m-1 flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="#1dd1a1"
+              stroke="#1dd1a1"
+              viewBox="0 0 448 512"
+            >
+              <defs>
+                <style>
+                  .fa-secondary {
+                    opacity: 0.4;
+                  }
+                </style>
+              </defs>
+              <path
+                class="fa-primary"
+                d="M160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V192H0V112C0 85.49 21.49 64 48 64H96V32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32zM216.1 416.1C207.6 426.3 192.4 426.3 183 416.1L119 352.1C109.7 343.6 109.7 328.4 119 319C128.4 309.7 143.6 309.7 152.1 319L200 366.1L295 271C304.4 261.7 319.6 261.7 328.1 271C338.3 280.4 338.3 295.6 328.1 304.1L216.1 416.1z"
+              />
+              <path
+                class="fa-secondary"
+                d="M448 464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192H448V464zM328.1 304.1C338.3 295.6 338.3 280.4 328.1 271C319.6 261.7 304.4 261.7 295 271L200 366.1L152.1 319C143.6 309.7 128.4 309.7 119 319C109.7 328.4 109.7 343.6 119 352.1L183 416.1C192.4 426.3 207.6 426.3 216.1 416.1L328.1 304.1z"
+              />
+            </svg>
+          </div>
+          <!-- List title -->
+          <div class="flex flex-col ml-2">
+            <span class="font-bold text-gray-900">Completed</span>
+          </div>
+          <!-- Item Count -->
+          <div
+            class="ml-auto p-1 m-1 flex items-center justify-center text-gray-400"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

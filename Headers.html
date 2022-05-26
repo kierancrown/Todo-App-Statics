@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body class="p-12 bg-gray-500 text-white min-h-screen">
+    <div class="flex flex-col space-y-4">
+      <h1 class="text-3xl font-bold underline mb-2">Headers</h1>
+
+      <!-- None expanded mobile header -->
+      <div
+        class="flex w-[320px] bg-blur bg-gray-100 bg-opacity-80 py-6 select-none shadow-xl"
+      >
+        <!-- Left -->
+        <div class="flex-1">
+          <div class="px-3 flex items-center text-teal-400 cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="currentColor"
+              stroke="currentColor"
+              viewBox="0 0 320 512"
+            >
+              <path
+                d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z"
+              />
+            </svg>
+            <span class="font-semibold">Back</span>
+          </div>
+        </div>
+        <!-- Center -->
+        <div class="flex-1">
+          <div class="flex flex-col items-center justify-center">
+            <div class="flex-1">
+              <span class="font-bold text-black">Settings</span>
+            </div>
+          </div>
+        </div>
+        <!-- Right -->
+        <div class="flex-1">
+          <div
+            class="flex items-center justify-center text-teal-400 cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 ml-auto mr-3"
+              fill="currentColor"
+              stroke="currentColor"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expanded mobile header -->
+      <div
+        class="flex flex-col w-[320px] bg-blur bg-gray-100 bg-opacity-80 py-6 select-none shadow-xl"
+      >
+        <div class="flex">
+          <!-- Left -->
+          <div class="flex-1">
+            <div class="px-3 flex items-center text-teal-400 cursor-pointer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="currentColor"
+                stroke="currentColor"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z"
+                />
+              </svg>
+              <span class="font-semibold">Back</span>
+            </div>
+          </div>
+          <!-- Center -->
+          <div class="flex-1">
+            <div class="flex flex-col items-center justify-center">
+              <div class="flex-1"></div>
+            </div>
+          </div>
+          <!-- Right -->
+          <div class="flex-1">
+            <div
+              class="flex items-center justify-center text-teal-400 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 ml-auto mr-3"
+                fill="currentColor"
+                stroke="currentColor"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <span class="font-bold text-black pt-12 px-4 text-4xl">Settings</span>
+      </div>
+    </div>
+  </body>
+</html>

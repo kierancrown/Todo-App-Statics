@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body class="p-12 bg-gray-500 text-white min-h-screen">
+    <div class="flex flex-col space-y-4">
+      <h1 class="text-3xl font-bold underline mb-2">Todo Item</h1>
+
+      <h2>Todo Item Starred</h2>
+      <div
+        class="w-80 p-3 rounded-lg shadow-lg bg-white flex flex-col text-gray-900"
+      >
+        <div class="flex items-center w-full">
+          <!-- Checkbox -->
+          <div
+            class="rounded-full border border-gray-200 p-1 m-1 flex items-center justify-center"
+          >
+            <div class="h-4 w-4"></div>
+          </div>
+          <!-- Title info -->
+          <div class="flex flex-col ml-2">
+            <span class="">Get a haircut</span>
+            <span class="text-red-300 text-xs">Due today</span>
+          </div>
+          <!-- Star Icon -->
+          <div
+            class="ml-auto p-1 m-1 flex items-center justify-center text-yellow-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="currentColor"
+              stroke="currentColor"
+              viewBox="0 0 576 512"
+            >
+              <path
+                d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- Tags -->
+        <div class="flex space-x-2 mt-4 hidden"></div>
+      </div>
+
+      <h2>Todo Item Without Tags</h2>
+      <div
+        class="w-80 p-3 rounded-lg shadow-lg bg-white flex flex-col text-gray-900"
+      >
+        <div class="flex items-center w-full">
+          <!-- Checkbox -->
+          <div
+            class="rounded-full border border-gray-200 p-1 m-1 flex items-center justify-center"
+          >
+            <div class="h-4 w-4"></div>
+          </div>
+          <!-- Title info -->
+          <div class="flex flex-col ml-2">
+            <span class="">Book flights to Italy 🇮🇹</span>
+            <span class="text-red-600 text-xs">Due 2 days ago</span>
+          </div>
+          <!-- Star Icon -->
+          <div
+            class="ml-auto p-1 m-1 flex items-center justify-center text-gray-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="currentColor"
+              stroke="currentColor"
+              viewBox="0 0 576 512"
+            >
+              <path
+                d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- Tags -->
+        <div class="flex space-x-2 mt-4 hidden"></div>
+      </div>
+
+      <h2>Todo Item With Tags</h2>
+      <div
+        class="w-80 p-3 rounded-lg shadow-lg bg-white flex flex-col text-gray-900"
+      >
+        <div class="flex items-center w-full">
+          <!-- Checkbox -->
+          <div
+            class="rounded-full border border-gray-200 p-1 m-1 flex items-center justify-center"
+          >
+            <div class="h-4 w-4"></div>
+          </div>
+          <!-- Title info -->
+          <div class="flex flex-col ml-2">
+            <span class="">Cut the grass</span>
+            <span class="text-green-600 text-xs">Due Friday</span>
+          </div>
+          <!-- Star Icon -->
+          <div
+            class="ml-auto p-1 m-1 flex items-center justify-center text-gray-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="currentColor"
+              stroke="currentColor"
+              viewBox="0 0 576 512"
+            >
+              <path
+                d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- Tags -->
+        <div class="flex space-x-2 mt-4">
+          <span
+            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800"
+          >
+            important
+          </span>
+          <span
+            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800"
+          >
+            Errand
+          </span>
+        </div>
+      </div>
+
+      <h2>Completed Todo Item</h2>
+      <div
+        class="w-80 p-3 rounded-lg shadow-lg bg-white flex flex-col text-gray-900 opacity-75"
+      >
+        <div class="flex items-center w-full">
+          <!-- Checkbox -->
+          <div
+            class="rounded-full border border-gray-200 p-1 m-1 flex items-center justify-center"
+          >
+            <!-- Tick -->
+            <svg
+              class="h-4 w-4 text-gray-400"
+              fill="currentColor"
+              stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"
+              />
+            </svg>
+          </div>
+          <!-- Title info -->
+          <div class="flex flex-col ml-2">
+            <span class="">Buy dog food</span>
+            <span class="text-gray-300 text-xs">Completed 2 hours ago</span>
+          </div>
+          <!-- Star Icon -->
+          <div
+            class="ml-auto p-1 m-1 flex items-center justify-center text-gray-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="currentColor"
+              stroke="currentColor"
+              viewBox="0 0 576 512"
+            >
+              <path
+                d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- Tags -->
+        <div class="flex space-x-2 mt-4">
+          <span
+            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800"
+          >
+            Pets
+          </span>
+        </div>
+      </div>
+
+      <h2>New Todo Item</h2>
+      <div
+        class="w-80 p-3 rounded-lg shadow-lg bg-white flex flex-col text-gray-900"
+      >
+        <div class="flex items-center w-full">
+          <!-- Checkbox -->
+          <div
+            class="rounded-full border border-gray-200 p-1 m-1 flex items-center justify-center"
+          >
+            <div class="h-4 w-4"></div>
+          </div>
+          <!-- Title info -->
+          <div class="flex flex-col ml-2">
+            <input
+              class="outline-none border-none"
+              type="text"
+              placeholder="e.g., Buy dog food"
+            />
+          </div>
+        </div>
+        <!-- Tags -->
+        <div class="flex space-x-3 mt-4 items-center">
+          <!-- List -->
+          <div
+            class="flex items-center border border-gray-200 bg-gray-50 rounded"
+            style="padding: 2px 6px 2px 6px"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4"
+              fill="#54a0ff"
+              stroke="#54a0ff"
+              viewBox="0 0 512 512"
+            >
+              <defs>
+                <style>
+                  .fa-secondary {
+                    opacity: 0.4;
+                  }
+                </style>
+              </defs>
+              <path
+                class="fa-primary"
+                d="M447 56.25C443.5 42 430.7 32 416 32H96C81.31 32 68.53 42 64.97 56.25l-61.25 248.7C1.247 314.9 0 325.2 0 335.5V432C0 458.5 21.49 480 48 480h416c26.51 0 48-21.49 48-48v-96.47c0-10.32-1.247-20.6-3.715-30.61L447 56.25zM352 352H160L128 288H72.97L121 96h270l48.03 192H384L352 352z"
+              />
+              <path
+                class="fa-secondary"
+                d="M391 96h-270L72.97 288H128l32 64h192l32-64h55.03L391 96zM176 144h160C344.8 144 352 151.2 352 160c0 8.836-7.164 16-16 16h-160C167.2 176 160 168.8 160 160C160 151.2 167.2 144 176 144zM368 256h-224C135.2 256 128 248.8 128 240C128 231.2 135.2 224 144 224h224C376.8 224 384 231.2 384 240C384 248.8 376.8 256 368 256z"
+              />
+            </svg>
+            <span class="ml-2 text-sm font-bold">Inbox</span>
+          </div>
+          <!-- Calendar -->
+          <div class="text-gray-600" style="width: 16px; height: 16px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              stroke="currentColor"
+              viewBox="0 0 448 512"
+            >
+              <defs>
+                <style>
+                  .fa-secondary {
+                    opacity: 0.4;
+                  }
+                </style>
+              </defs>
+              <path
+                class="fa-primary"
+                d="M160 64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V192H0V112C0 85.49 21.49 64 48 64H96V32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32V64z"
+              />
+              <path
+                class="fa-secondary"
+                d="M0 192H448V464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192zM64 304C64 312.8 71.16 320 80 320H112C120.8 320 128 312.8 128 304V272C128 263.2 120.8 256 112 256H80C71.16 256 64 263.2 64 272V304zM208 256C199.2 256 192 263.2 192 272V304C192 312.8 199.2 320 208 320H240C248.8 320 256 312.8 256 304V272C256 263.2 248.8 256 240 256H208zM320 304C320 312.8 327.2 320 336 320H368C376.8 320 384 312.8 384 304V272C384 263.2 376.8 256 368 256H336C327.2 256 320 263.2 320 272V304zM80 384C71.16 384 64 391.2 64 400V432C64 440.8 71.16 448 80 448H112C120.8 448 128 440.8 128 432V400C128 391.2 120.8 384 112 384H80zM192 432C192 440.8 199.2 448 208 448H240C248.8 448 256 440.8 256 432V400C256 391.2 248.8 384 240 384H208C199.2 384 192 391.2 192 400V432zM336 384C327.2 384 320 391.2 320 400V432C320 440.8 327.2 448 336 448H368C376.8 448 384 440.8 384 432V400C384 391.2 376.8 384 368 384H336z"
+              />
+            </svg>
+          </div>
+          <!-- Tags -->
+          <div class="text-gray-600 opacity-40" style="width: 16px; height: 16px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              stroke="currentColor"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M416 127.1h-58.23l9.789-58.74c2.906-17.44-8.875-33.92-26.3-36.83c-17.53-2.875-33.92 8.891-36.83 26.3L292.9 127.1H197.8l9.789-58.74c2.906-17.44-8.875-33.92-26.3-36.83c-17.53-2.875-33.92 8.891-36.83 26.3L132.9 127.1H64c-17.67 0-32 14.33-32 32C32 177.7 46.33 191.1 64 191.1h58.23l-21.33 128H32c-17.67 0-32 14.33-32 32c0 17.67 14.33 31.1 32 31.1h58.23l-9.789 58.74c-2.906 17.44 8.875 33.92 26.3 36.83C108.5 479.9 110.3 480 112 480c15.36 0 28.92-11.09 31.53-26.73l11.54-69.27h95.12l-9.789 58.74c-2.906 17.44 8.875 33.92 26.3 36.83C268.5 479.9 270.3 480 272 480c15.36 0 28.92-11.09 31.53-26.73l11.54-69.27H384c17.67 0 32-14.33 32-31.1c0-17.67-14.33-32-32-32h-58.23l21.33-128H416c17.67 0 32-14.32 32-31.1C448 142.3 433.7 127.1 416 127.1zM260.9 319.1H165.8L187.1 191.1h95.12L260.9 319.1z"
+              />
+            </svg>
+          </div>
+          <!-- Notifications -->
+          <div class="text-gray-600" style="width: 16px; height: 16px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              stroke="currentColor"
+              viewBox="0 0 448 512"
+            >
+              <defs>
+                <style>
+                  .fa-secondary {
+                    opacity: 0.4;
+                  }
+                </style>
+              </defs>
+              <path
+                class="fa-primary"
+                d="M288 448C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288z"
+              />
+              <path
+                class="fa-secondary"
+                d="M256 32V51.2C329 66.03 384 130.6 384 208V226.8C384 273.9 401.3 319.2 432.5 354.4L439.9 362.7C448.3 372.2 450.4 385.6 445.2 397.1C440 408.6 428.6 416 416 416H32C19.4 416 7.971 408.6 2.809 397.1C-2.353 385.6-.2883 372.2 8.084 362.7L15.5 354.4C46.74 319.2 64 273.9 64 226.8V208C64 130.6 118.1 66.03 192 51.2V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32H256z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

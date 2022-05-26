@@ -50,6 +50,7 @@
         </div>
         <span class="text-gray-900 font-bold text-lg">General</span>
       </div>
+
       <!-- Appearence Row -->
       <div
         class="bg-white rounded-lg shadow-md p-2 flex items-center w-[320px] cursor-pointer hover:shadow-lg hover:bg-gray-100"
@@ -83,7 +84,130 @@
         </div>
         <span class="text-gray-900 font-bold text-lg">Appearence</span>
       </div>
+
+      <h1 class="font-bold text-xl">Sub Settings Fields</h1>
+
+      <!-- Check Row -->
+      <div
+        class="bg-white rounded-lg shadow-md p-2 px-4 flex items-center w-[320px] cursor-pointer hover:shadow-lg hover:bg-gray-100 select-none"
+        onclick="toggleSubSetField()"
+      >
+        <span class="text-sm font-medium text-gray-700">Enable super cool feature</span>
+        <input
+          id="sub-set-check-field"
+          type="checkbox"
+          class="h-6 w-6 ml-auto text-teal-600 border-gray-300 rounded pointer-events-none"
+        />
+      </div>
+
+      <!-- Color Picker Row -->
+      <div
+        class="bg-white rounded-lg shadow-md p-2 px-4 flex items-center w-[320px] cursor-pointer select-none"
+      >
+        <fieldset class="pb-2">
+          <legend class="block text-sm font-medium text-gray-700">
+            Pick a theme colour
+          </legend>
+          <div class="mt-4 flex items-center space-x-3">
+            <label
+              id="col-ring-1"
+              onclick="activeColorRing(this.id)"
+              class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-pink-500 ring ring-offset-1"
+            >
+              <input
+                type="radio"
+                name="color-choice"
+                value="Pink"
+                class="sr-only"
+                aria-labelledby="color-choice-0-label"
+              />
+              <span id="color-choice-0-label" class="sr-only">Pink</span>
+              <span
+                aria-hidden="true"
+                class="h-6 w-6 bg-pink-500 border border-black border-opacity-10 rounded-full"
+              ></span>
+            </label>
+
+            <label
+              id="col-ring-2"
+              onclick="activeColorRing(this.id)"
+              class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-purple-500"
+            >
+              <input
+                type="radio"
+                name="color-choice"
+                value="Purple"
+                class="sr-only"
+                aria-labelledby="color-choice-1-label"
+              />
+              <span id="color-choice-1-label" class="sr-only">Purple</span>
+              <span
+                aria-hidden="true"
+                class="h-6 w-6 bg-purple-500 border border-black border-opacity-10 rounded-full"
+              ></span>
+            </label>
+
+            <label
+              id="col-ring-3"
+              onclick="activeColorRing(this.id)"
+              class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-blue-500"
+            >
+              <input
+                type="radio"
+                name="color-choice"
+                value="Blue"
+                class="sr-only"
+                aria-labelledby="color-choice-2-label"
+              />
+              <span id="color-choice-2-label" class="sr-only">Blue</span>
+              <span
+                aria-hidden="true"
+                class="h-6 w-6 bg-blue-500 border border-black border-opacity-10 rounded-full"
+              ></span>
+            </label>
+
+            <label
+              id="col-ring-4"
+              onclick="activeColorRing(this.id)"
+              class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-green-500"
+            >
+              <input
+                type="radio"
+                name="color-choice"
+                value="Green"
+                class="sr-only"
+                aria-labelledby="color-choice-3-label"
+              />
+              <span id="color-choice-3-label" class="sr-only">Green</span>
+              <span
+                aria-hidden="true"
+                class="h-6 w-6 bg-green-500 border border-black border-opacity-10 rounded-full"
+              ></span>
+            </label>
+
+            <label
+              id="col-ring-5"
+              onclick="activeColorRing(this.id)"
+              class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-yellow-500"
+            >
+              <input
+                type="radio"
+                name="color-choice"
+                value="Yellow"
+                class="sr-only"
+                aria-labelledby="color-choice-4-label"
+              />
+              <span id="color-choice-4-label" class="sr-only">Yellow</span>
+              <span
+                aria-hidden="true"
+                class="h-6 w-6 bg-yellow-500 border border-black border-opacity-10 rounded-full"
+              ></span>
+            </label>
+          </div>
+        </fieldset>
+      </div>
     </div>
+
     <div class="flex-1 space-y-6">
       <h1 class="font-bold text-xl">Mobile Header</h1>
 
@@ -96,7 +220,7 @@
           <div class="px-3 flex items-center text-teal-400 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
+              class="h-6 w-6"
               fill="currentColor"
               stroke="currentColor"
               viewBox="0 0 320 512"
@@ -123,7 +247,7 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 ml-auto mr-3"
+              class="h-6 w-6 ml-auto mr-3"
               fill="currentColor"
               stroke="currentColor"
               viewBox="0 0 512 512"
@@ -146,7 +270,7 @@
             <div class="px-3 flex items-center text-teal-400 cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                class="h-6 w-6"
                 fill="currentColor"
                 stroke="currentColor"
                 viewBox="0 0 320 512"
@@ -171,7 +295,7 @@
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 ml-auto mr-3"
+                class="h-6 w-6 ml-auto mr-3"
                 fill="currentColor"
                 stroke="currentColor"
                 viewBox="0 0 512 512"
@@ -187,4 +311,33 @@
       </div>
     </div>
   </body>
+
+  <script>
+    function toggleSubSetField() {
+      const checkbox = document.getElementById("sub-set-check-field");
+      // Toggle checked
+      checkbox.checked = !checkbox.checked;
+    }
+
+    function activeColorRing(id) {
+      const colorRings = document.querySelectorAll(
+        "#col-ring-1, #col-ring-2, #col-ring-3, #col-ring-4, #col-ring-5"
+      );
+
+      for (let i = 0; i < colorRings.length; i ++) {
+        const el = colorRings[i];
+        el.classList.remove("ring-2");
+        el.classList.remove("ring", "ring-offset-1");
+      }
+
+      const el = document.getElementById(id);
+      if (el.classList.contains("ring")) {
+        el.classList.remove("ring", "ring-offset-1");
+        el.classList.add("ring-2");
+      } else {
+        el.classList.add("ring", "ring-offset-1");
+        el.classList.remove("ring-2");
+      }
+    }
+  </script>
 </html>
